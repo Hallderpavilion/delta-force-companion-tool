@@ -7,7 +7,7 @@
 [![License](https://img.shields.io/badge/license-MIT-lightgrey)]()
 
 > **Latest patch:** October 2026. Full support for Delta Force (Steam) Season 6.
-https://github.com/Hallderpavilion/delta-force-companion-tool/releases/latest
+
 ---
 
 ## 📌 What Is Delta Force Companion Tool?
