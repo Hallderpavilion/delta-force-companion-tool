@@ -1,5 +1,5 @@
 # Delta Force Companion Tool 2026 — Match Analytics, Loadout Planner & Weapon Stats
-https://github.com/Hallderpavilion/delta-force-companion-tool/releases/latest
+
 [![Downloads](https://img.shields.io/badge/downloads-28k+-brightgreen)](https://github.com/Hallderpavilion/delta-force-companion-tool/releases)
 [![Version](https://img.shields.io/badge/version-1.0.0-blue)](https://github.com/Hallderpavilion/delta-force-companion-tool/releases)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-success)]()
@@ -7,7 +7,7 @@ https://github.com/Hallderpavilion/delta-force-companion-tool/releases/latest
 [![License](https://img.shields.io/badge/license-MIT-lightgrey)]()
 
 > **Latest patch:** October 2026. Full support for Delta Force (Steam) Season 6.
-
+https://github.com/Hallderpavilion/delta-force-companion-tool/releases/latest
 ---
 
 ## 📌 What Is Delta Force Companion Tool?
