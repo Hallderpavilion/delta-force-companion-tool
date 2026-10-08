@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delta Force Companion Tool 2026 – Match Analytics &amp; Loadout Planner</title>
+<meta name="description" content="Delta Force Companion Tool 2026 — Match analytics, loadout planner, weapon stats, map intel. Free external utility for PC. Windows 10/11.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://Hallderpavilion.github.io/delta-force-companion-tool/">
+<meta property="og:title" content="Delta Force Companion Tool 2026">
+<meta property="og:description" content="Match analytics, loadout planner, weapon stats, map intel. Free external utility for PC. Windows 10/11.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://Hallderpavilion.github.io/delta-force-companion-tool/">
+<meta name="theme-color" content="#070a07">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Delta Force Companion Tool",
+  "alternateName": "Delta Force Companion Tool 2026",
+  "applicationCategory": "GameApplication",
+  "operatingSystem": "Windows 10, Windows 11",
+  "softwareVersion": "1.0.0",
+  "description": "Free external utility for Delta Force providing match analytics, loadout planner, weapon stats, map intel and performance tracking.",
+  "url": "https://Hallderpavilion.github.io/delta-force-companion-tool/",
+  "downloadUrl": "https://github.com/Hallderpavilion/delta-force-companion-tool/releases/latest",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+<style>
+:root{
+  --bg:#070a07; --panel:#0e140e; --panel-2:#121a12; --line:#1f2e1f;
+  --green:#3ddc4a; --green-dim:#2a9a34; --text:#d9e6d9; --muted:#8a9d8a;
+  --font:"Segoe UI",system-ui,-apple-system,Roboto,"Helvetica Neue",Arial,sans-serif;
+  --mono:ui-monospace,"Cascadia Mono",Consolas,Menlo,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.65;font-size:1.05rem;
+  background-image:linear-gradient(rgba(61,220,74,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(61,220,74,.035) 1px,transparent 1px);
+  background-size:48px 48px}
+a{color:var(--green)}
+:focus-visible{outline:2px solid var(--green);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 1.25rem}
+section{padding:4.5rem 0}
+h1,h2,h3{line-height:1.15;color:#fff;letter-spacing:-.01em}
+h2{font-size:clamp(1.6rem,3.5vw,2.2rem);margin-bottom:1.5rem;padding-left:.9rem;border-left:4px solid var(--green)}
+h3{font-size:1.15rem;margin-bottom:.4rem}
+
+/* Hero */
+.hero{padding:6rem 0 5rem;border-bottom:1px solid var(--line);text-align:left}
+.hero .tag{display:inline-block;font-family:var(--mono);font-size:.85rem;color:var(--green);border:1px solid var(--green-dim);padding:.25rem .7rem;margin-bottom:1.5rem}
+.hero h1{font-size:clamp(2.4rem,7vw,4.6rem);font-weight:800;max-width:14ch;margin-bottom:1.25rem}
+.hero p.sub{max-width:60ch;color:var(--muted);font-size:1.2rem;margin-bottom:2rem}
+.btn{display:inline-block;background:var(--green);color:#041004;font-weight:700;text-decoration:none;padding:.95rem 2rem;border-radius:3px;font-size:1.1rem;transition:background .15s,transform .15s}
+.btn:hover{background:#6af074;transform:translateY(-1px)}
+.hero .meta{margin-top:1rem;font-family:var(--mono);font-size:.85rem;color:var(--muted)}
+
+/* Problem */
+.problem p{max-width:68ch;font-size:1.2rem}
+.problem strong{color:var(--green)}
+
+/* Features */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.1rem}
+.card{background:var(--panel);border:1px solid var(--line);border-top:3px solid var(--green-dim);padding:1.5rem}
+.card .icon{width:44px;height:44px;margin-bottom:1rem;color:var(--green)}
+.card p{color:var(--muted);font-size:.98rem}
+
+/* Steps */
+.steps{list-style:none;counter-reset:s;display:grid;gap:.9rem;max-width:720px}
+.steps li{counter-increment:s;display:flex;gap:1rem;align-items:center;background:var(--panel);border:1px solid var(--line);padding:1rem 1.25rem}
+.steps li::before{content:counter(s);flex:none;width:2.4rem;height:2.4rem;display:grid;place-items:center;background:var(--green);color:#041004;font-weight:800;font-family:var(--mono)}
+.steps h3{margin:0;font-size:1.05rem}
+
+/* Table */
+.tbl{overflow-x:auto}
+table{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid var(--line);min-width:420px}
+th,td{text-align:left;padding:.9rem 1.1rem;border-bottom:1px solid var(--line)}
+th{width:30%;color:var(--green);font-weight:600;background:var(--panel-2)}
+tr:last-child th,tr:last-child td{border-bottom:0}
+
+/* FAQ */
+details{background:var(--panel);border:1px solid var(--line);margin-bottom:.7rem}
+summary{cursor:pointer;padding:1rem 1.25rem;font-weight:600;color:#fff;list-style:none;display:flex;justify-content:space-between;gap:1rem}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--green);font-family:var(--mono);font-size:1.3rem;line-height:1}
+details[open] summary::after{content:"\2212"}
+details[open]{border-color:var(--green-dim)}
+details p{padding:0 1.25rem 1.1rem;color:var(--muted)}
+
+/* CTA band */
+.band{text-align:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--panel)}
+.band h2{border:0;padding:0}
+
+footer{padding:2.5rem 0 3rem;color:var(--muted);font-size:.9rem}
+footer .links{display:flex;flex-wrap:wrap;gap:1.25rem;margin-bottom:1rem}
+footer p{max-width:75ch}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap hero">
+    <span class="tag">v1.0.0 · Free · Windows 10/11</span>
+    <h1>Delta Force Companion Tool 2026</h1>
+    <p class="sub">A free external utility for PC players: match analytics, loadout planner, weapon stats, map intel and live performance tracking for Delta Force.</p>
+    <a class="btn" href="https://github.com/Hallderpavilion/delta-force-companion-tool/releases/latest" rel="noopener">Get the Tool</a>
+    <p class="meta">Downloads from GitHub Releases</p>
+  </div>
+</header>
+
+<main>
+  <section class="problem" aria-labelledby="problem-title">
+    <div class="wrap">
+      <h2 id="problem-title">Why you need a companion</h2>
+      <p>Delta Force lacks in-depth match analytics. You can't track your stats, optimize loadouts, or learn map intel without third-party tools. <strong>This companion fixes that.</strong></p>
+    </div>
+  </section>
+
+  <section id="features" aria-labelledby="features-title">
+    <div class="wrap">
+      <h2 id="features-title">Features</h2>
+      <div class="grid">
+        <article class="card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/></svg>
+          <h3>Match Analytics</h3>
+          <p>Track K/D, win rate, favorite weapons, and playstyle trends.</p>
+        </article>
+        <article class="card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="1"/><path d="M7 9h10M7 13h6M7 17h3"/></svg>
+          <h3>Loadout Planner</h3>
+          <p>Build, save, and share optimal loadouts for every operator.</p>
+        </article>
+        <article class="card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg>
+          <h3>Weapon Stats</h3>
+          <p>Compare damage, recoil, TTK, and range across all weapons.</p>
+        </article>
+        <article class="card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2-6-2z"/><path d="M9 4v14M15 6v14"/></svg>
+          <h3>Map Intel</h3>
+          <p>Interactive maps with callouts, spawn points, and objective locations.</p>
+        </article>
+        <article class="card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg>
+          <h3>Performance Tracker</h3>
+          <p>Monitor FPS, ping, and system stats in real time.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="how-it-works" aria-labelledby="how-title">
+    <div class="wrap">
+      <h2 id="how-title">How It Works</h2>
+      <ol class="steps">
+        <li><h3>Visit the GitHub repository</h3></li>
+        <li><h3>Download the latest release</h3></li>
+        <li><h3>Extract the archive</h3></li>
+        <li><h3>Launch the utility</h3></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="requirements" aria-labelledby="req-title">
+    <div class="wrap">
+      <h2 id="req-title">System Requirements</h2>
+      <div class="tbl">
+        <table>
+          <caption style="position:absolute;left:-9999px">Delta Force Companion Tool system requirements</caption>
+          <tbody>
+            <tr><th scope="row">OS</th><td>Windows 10 / 11 (64-bit)</td></tr>
+            <tr><th scope="row">RAM</th><td>4 GB minimum</td></tr>
+            <tr><th scope="row">Game</th><td>Delta Force installed on PC</td></tr>
+            <tr><th scope="row">Permissions</th><td>Standard user; administrator rights may be needed for overlay features</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" aria-labelledby="faq-title">
+    <div class="wrap">
+      <h2 id="faq-title">Frequently Asked Questions</h2>
+      <details><summary>Is this safe?</summary><p>Yes. It's an external overlay that only reads game data.</p></details>
+      <details><summary>Does it work with Steam?</summary><p>Yes. Full support.</p></details>
+      <details><summary>Can I revert changes?</summary><p>Yes. No permanent changes made.</p></details>
+      <details><summary>Does it work in multiplayer?</summary><p>Yes. Only reads data, does not modify anything.</p></details>
+      <details><summary>Is it free?</summary><p>Yes. No donations, no ads, no telemetry.</p></details>
+      <details><summary>How do I update?</summary><p>Download the latest release from GitHub.</p></details>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="cta-title">
+    <div class="wrap">
+      <h2 id="cta-title">Ready to level up your matches?</h2>
+      <a class="btn" href="https://github.com/Hallderpavilion/delta-force-companion-tool/releases/latest" rel="noopener">Get the Tool</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="links">
+      <a href="https://github.com/Hallderpavilion/delta-force-companion-tool" rel="noopener">GitHub repository</a>
+      <a href="https://github.com/Hallderpavilion/delta-force-companion-tool/blob/main/LICENSE" rel="noopener">License</a>
+      <a href="https://github.com/Hallderpavilion/delta-force-companion-tool/releases/latest" rel="noopener">Latest release</a>
+    </div>
+    <p>Delta Force Companion Tool v1.0.0 is an independent, fan-made project. It is not affiliated with, endorsed by, or sponsored by the developers or publishers of Delta Force. All game names, logos, and trademarks belong to their respective owners.</p>
+  </div>
+</footer>
+
+</body>
+</html>
